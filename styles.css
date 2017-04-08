@@ -1,0 +1,10 @@
+
+.songTitles{
+text-align: left;
+padding-left:70px;
+}
+#songBox{
+    text-align: center;
+     margin: 0px auto;
+     border:2px solid green;
+}
