@@ -1,14 +1,27 @@
 <html>
  <head>
-   <title>Octopus</title>
-   
+   <title>Octopus</title>  
     <style>
   #container {
   border: 1px solid black; 
   margin: 0px auto; 
   }
+
+  #container h1, h2 {
+  font-family: monospace;
+  word-spacing: -5px;
+  }
+
   #cover {
-     border:1px solid green;
+    margin:auto;
+    height:300px;
+    width:300px;
+    border:1px solid green;
+    background: url("https://img.discogs.com/55J2LHcfuDfCNhRhh9CdqqbY5dw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-818695-1410357054-8256.jpeg.jpg") no-repeat;
+  }
+
+  li {
+ font-style: italic;
   }
   </style>
 
@@ -20,11 +33,11 @@
    <tr>
    <td style="text-align: center">
     <br />
-    <img src="https://s-media-cache-ak0.pinimg.com/564x/eb/3f/ea/eb3fea9c67b190100739ff401e02ba35.jpg" width="300" id="cover"/>
+    <div id="cover"></div>
     <br />
-    <H1 style="margin: 0">Octopus</H1>
-    <H2 style="margin: 0"><a href="http://www.blazemonger.com/GG/Gentle_Giant_Home_Page">Gentle Giant</a></H2>
-    <H3 style="margin: 0">December 1, 1972</H3>
+    <h1 style="margin: 0">Octopus</h1>
+    <H3 style="margin: 0"><a href="http://www.blazemonger.com/GG/Gentle_Giant_Home_Page">Gentle Giant</a></h3>
+    <H4 style="margin: 0">December 1, 1972</H4>
 	<hr />
    </td>
   </tr>
@@ -48,7 +61,7 @@
 	</td>
 	</tr>
 	<tr>
-	   <th style="text-align: center"><h2>Tracks</h2></th>
+	   <th style="text-align: center"><h3>Tracks</h3></th>
 	</tr>
 	</table>
    </td>
