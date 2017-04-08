@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!-- only user label tags for input tags, not textarea or select -->
 <html lang="en">
 <head>
     <title>Billy's Restaurant - Home</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
         <style>
          #contactForm input, textarea{
-        background-color: sandybrown;
+        background-color:aliceblue;
+         }
+        .required{
+           font-weight: bold;
        }
     </style>
 </head>
@@ -22,24 +26,24 @@
     <td class="header" width="100"><h2><a href="menu.html">Menu</a><h2</td>
     <td class="header"><h2><a href="contact.html">Contact Us</a><h2</td>
 </tr>
-<tr height="500px">
+<tr height="500px" class="bodyColor">
     <td align="center" colspan="3">
         <form action="contact.html" method="POST" id="contactForm">
      <table>
          <tr>
-             <td align="right">Name: </td>
-             <td><input type="text" name="name"" /></td>
+             <td align="right"><label for="name" class="required">Name:</label></td>
+             <td><input type="text" name="name" /></td>
         </tr>
          <tr>
-             <td align="right">Email: </td>
+             <td align="right"><label for="email" class="required">Email:</label></td>
              <td><input type="text" name="email" /></td>
         </tr>
          <tr>
-             <td align="right">Phone: </td>
+             <td align="right"><label for="phone">Phone:</label></td>
              <td><input type="text" name="phone" /><br /></td>
         </tr>
          <tr>
-             <td align="right">Reason for Inquiry:</td>
+             <td align="right" class="required">Reason for Inquiry:</td>
              <td>           
                 <select name"reason">
                     <option value="Catering">Catering</option>
@@ -53,20 +57,27 @@
              <td><textarea name="additional"></textarea></td>
              </tr>
          <tr>
-             <td> Have you been to the restaurant? </td>
+             <td>Have you been to the restaurant? </td>
              <td>
-                 No: <input type="radio" name="been" value="no" />
-             Yes: <input type="radio" name="been" value="yes" />
+                <label for="no">No</label>
+                <input type="radio" name="been" value="no" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="been" value="yes" />
            </td>
         </tr>
          <tr>
              <td align="right">Best Days to Contact You:</td>
              <td>
-               M <input type="checkbox" name="" value="m" />
-             T <input type="checkbox" name="" value="t" />
-               W  <input type="checkbox" name="" value="w" />
-                Th <input type="checkbox" name="" value="th" />
-                F <input type="checkbox" name="" value="F" />
+               <label for="m" class="required">M</label>
+                   <input type="checkbox" name="days" value="m" />
+             <label for="t" class="required">T</label>
+                 <input type="checkbox" name="days" value="t" />
+               <label for="w" class="required">W</label>
+                   <input type="checkbox" name="days" value="w" />
+                <label for="th" class="required">Th</label>
+                    <input type="checkbox" name="days" value="th" />
+                <label for="f" class="required">F</label>
+                    <input type="checkbox" name="days" value="F" />
          </tr>
          <tr>
              <td></td>

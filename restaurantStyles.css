@@ -1,7 +1,18 @@
-.header {
-    text-align: left;
-   line-height: 0;
+h1 {
+      font-family: fantasy;
+      font-weight: lighter;
+      letter-spacing: 1px;
 }
-.footer {
+    .header {
+      text-align: left;
+      line-height: 0;
+}
+    .footer {
     text-decoration: overline;
+}
+    span:first-of-type {
+    font-size: 30px;
+}
+.bodyColor{
+    background-color:antiquewhite;
 }
