@@ -8,11 +8,47 @@ h1 {
       line-height: 0;
 }
     .footer {
-    text-decoration: overline;
+     text-decoration: overline;
 }
     span:first-of-type {
-    font-size: 30px;
+     font-size: 30px;
 }
 .bodyColor{
     background-color:antiquewhite;
 }
+
+.header a {
+ font-weight: normal;
+}
+.header a:visited{
+ color: mediumaquamarine;
+
+}
+ .header a:hover{
+  font-weight:bold;
+
+ }
+
+ .header a:active {
+   text-decoration: none;
+   font-weight: normal;
+ }
+
+ #bevs{
+  width: 300px;
+  margin: 12px 0px 0px 0px;
+ }
+
+ #bevs th {
+  border-style:groove;
+  border-width: 1px 0px 1px 0px;
+  text-align:left;
+  padding-bottom:5px 0px 10px 0px;
+  text-decoration:underline;
+  line-height:24px;
+ }
+
+ #bevs td:nth-of-type(2){
+   text-align: right;
+
+ }
