@@ -14,7 +14,23 @@ padding-left:70px;
 }
 
 #songBox{
+    background-color:azure;
     text-align: center;
      margin: 0px auto;
      border:2px solid green;
 }
+.songs td {
+     font-style: italic;
+}
+
+a {
+   text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+  background-color: orangered;
+}
+
+
+ 
