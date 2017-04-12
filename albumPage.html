@@ -3,6 +3,18 @@
  <head>
    <title>Octopus</title>  
 
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+
     <style>
     #cover {
       margin:auto;
@@ -25,7 +37,7 @@
    <tr>
    <td style="text-align: center">
     <br />
-    <div id="cover"></div>
+    <div id="cover" class="img-circle"></div>
     <br />
     <h1 style="margin: 0">Octopus</h1>
     <H3 style="margin: 0"><a href="http://www.blazemonger.com/GG/Gentle_Giant_Home_Page" id="GGpage">Gentle Giant</a></h3>
@@ -60,10 +72,15 @@
   </tr>
   <tr>
    <td>
- <table width="600px" id="songBox" class="songs">
-  <tr bgcolor="#ccc">
-   <th width="25%">Track #</th>
-   <th width="50%">Track Title</th>
+
+
+  <table class="table-responsive songs table-striped" id="songBox">
+    <!-- Tried various things but they all intefered with my existing table styles. 
+    table-responsive doesn't seem to do much, but the page does at least see the bootstrap style sheets.
+    Settling here for now until I have more info -->
+  <tr>
+   <th width="25%" style="text-align:center;">Track #</th>
+   <th width="50%" style="padding-left:5%">Track Title</th>
    <th width="25%">Track Length</th>
   </tr>
   <tr style="text-align: center">
@@ -78,7 +95,7 @@
   </tr>
   <tr style="text-align: center">
    <td>3</td>
-   <td class="songTitles"">A Cry for Everyone</td>
+   <td class="songTitles">A Cry for Everyone</td>
    <td>4:04</td>
   </tr>
   <tr style="text-align: center">

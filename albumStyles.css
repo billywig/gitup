@@ -10,17 +10,24 @@
 
 .songTitles{
   text-align: left;
-  padding-left:70px;
+  padding-left:5%;
 }
 
 #songBox{
     background-color:azure;
     text-align: center;
+    width:50%;
     margin: 0px auto;
     border:2px solid green;
 }
+
+   #songBox tr:first-child{
+   background-color: #ccc;
+}
+
 .songs td {
      font-style: italic;
+     
 }
 
 a {
