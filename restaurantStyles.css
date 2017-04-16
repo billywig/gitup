@@ -8,9 +8,10 @@ h1 {
       line-height: 0;
 }
     .footer {
-     text-decoration: overline;
+    /* text-decoration: overline;*/
+    font-size:small;
 }
-    span:first-of-type {
+    b:first-of-type {
      font-size: 30px;
 }
 .bodyColor{
@@ -34,18 +35,24 @@ h1 {
    font-weight: normal;
  }
 
- #bevs{
-  width: 300px;
-  margin: 12px 0px 0px 0px;
+ /*  .bevs{
+  width: 600px;
+ margin: 12px 0px 0px 0px;
  }
 
- #bevs th {
+ /*#bevsHead {
   border-style:groove;
   border-width: 1px 0px 1px 0px;
   text-align:left;
   padding-bottom:5px 0px 10px 0px;
   text-decoration:underline;
   line-height:24px;
+ }
+*/
+ #bevsHead {
+  text-decoration:underline;
+  line-height:24px;
+  font-weight: bold;
  }
 
  #bevs td:nth-of-type(2){

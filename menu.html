@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Billy's Restaurant - Menu</title>
-    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
-        <style>
-           .menu span {
-           letter-spacing: 1px;
-           }
-    </style>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+        <title>Billy's Restaurant - Menu</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+            <style>
+            .menu span {
+            letter-spacing: 1px;
+            }
+        </style>
 </head>
-
 <body>
-    <table border="0" align="center" width="100%">
-<tr>
-    <td colspan="3" align="center">
-<h1>Billy's Restaurant</h1>
-    </td>
-</tr>
-<tr>
-    <td class="header" width="100"><h2><a href="restaurantHome.html">Home</a><h2></td>
-    <td class="header" width="100"><h2><a href="menu.html">Menu</a><h2</td>
-    <td class="header"> <h2><a href="contact.html">Contact Us</a><h2</td>
-</tr>
-<tr height="500px" class="bodyColor">
-    <td align="center" colspan="3">
-       <table width="70%" cellspacing="10" border="0" class="menu">
-           <tr>
-               <td align="center">
-                <span><b>Meaty Meat Pie</b></span><br />
-               <span>The Best ever version ever created in the city. <br />Billy's special sauce is intoxicating.</span><br />
-               <span>$10.00</span>
-               </td>
-                 <td align="center">
-                   <span><b>Bean Juice Soda</b></span><br />
-               <span>The Best ever version ever created in the city. <br />The Juiciest!</span><br />
-               <span>$10.00</span>
-               </td>
-                <td align="center">
-                   <span><b>Beet Extract Cake</b></span><br />
-               <span>The Best ever version ever created in the city. <br />Extracted by hand.</span><br />
-               <span>$10.00</span>
-               </td>
-           </tr>
-           <tr height="50">
-               <td colspacing="3"></td>
-           </tr>
-            <tr>
-               <td align="center">
-                <span><b>Large Portion Snake Juice</b></span><br />
-               <span>The Best ever version ever created in the city.<br /> From a sustainable snake farm.</span><br />
-              <span>$10.00</span>
-               </td>
-                 <td align="center">
-                   <span><b>Mellow Brownies</b></span><br />
-                 <span>The Best ever version ever created in the city. <br /> Bet you can't eat any.</span><br />
-               <span>$10.00</span>
-               </td>
-                <td align="center">
-                   <span><b>Party Apertif</b></span><br />
-                <span>The Best ever version ever created in the city. <br />Drink until dawn.</span><br />
-               <span>$10.00</span>
-               </td>
-           </tr>
-       </table>
-       <table id="bevs">
-           <tr>
-               <th colspan=2">Beverages</th>
-            </tr>
-               <tr>
-               <td>Root Beer</td>
-               <td>$3.00</td>
-               </tr>
-            <tr>
-               <td>Bottled Water</td>
-               <td>$1.25</td>
-            </tr>
-            <tr>
-               <td>Lemonade</td>
-               <td>$1.00</td>
-            </tr>
-            <tr>
-               <td>Iced Tea</td>
-               <td>$1.25</td>
-        </tr>
-    </table>
- </td>
- </tr>
-<tr>
-  <td colspan="3" align="center">
-<h3 class="footer">123 Fake St, Clinton, MA 01510 - 617 335-8313</h3>
-    </td>
-</tr>
+<!--begin main cont-->
+ <div class="container-fluid" style="border: 1px solid #000;">
+    <div class="row"> 
+        <div class="col-md-12" style="text-align:center;"><h1>Billy's Restaurant</h1>
+        </div>
+    </div>
+    <div class="row" >
+            <div class="col-md-12" style="border: 1px solid #000;">
+                    <ul class="nav nav-tabs header">
+                    <li><a href="restaurantHome.html" class="glyphicon glyphicon-home"></a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+     </div>
+  <div class="row bodyColor">
+          <div class="col-md-12" style="text-align:center;"><b>Menu</b>
+          </div>
+     </div>   
+     </div>   
 
-    </table>
-
+                 <!--begin menu cont-->
+    <div class="container-fluid bodyColor" style="text-align:center;padding:0% 10% 1% 10%;">
+                    <div class="row" style="padding-top:50px;">
+                    <div class="col-md-4">                
+                    <b>Meaty Meat Pie</b><br />              
+                    The Best ever version ever created in the city. Billy's special sauce is intoxicating.<br />
+                    $10.00               
+                    </div>
+                    <div class="col-md-4"> 
+                    <b>Bean Juice Soda</b><br />            
+                    The Best Bean Juice Soda ever created in the city. The Juiciest!<br />
+                        $10.00                       
+                </div>
+                    <div class="col-md-4"> 
+                    <b>Beet Extract Cake</b><br />          
+                    Only Organic Beet Extract Used. Extracted by hand.<br />                         
+                        $10.00
+                        </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                <b>Large Portion Snake Juice</b><br /> 
+                 The Best ever version ever created in the city. From a sustainable snake farm!<br />      
+                       $10.00                  
+                    </div>     
+            <div class="col-md-4">
+                <b>Mellow Brownies</b> <br />                         
+                The Best ever version ever created in the city.  Bet you can't eat any.<br />
+                    $10.00         
+            </div>
+            <div class="col-md-4">                  
+                <b>Party Apertif</b><br />
+                The Best ever version ever created in the city. Drink until dawn.<br />                                  
+                $10.00                   
+            </div>
+         </div>      
+   </div>  <!--end menu cont-->   
+        <!--begin bevs cont-->
+        <br />
+        <div class="container-fluid" style="margin:auto;max-width:20%;width:100%">
+            <div class="row bevs">
+                    <div class="col-md-12 bevs" id="bevsHead">Beverages                      
+                    </div>
+            </div>
+                <div class="row bevs">
+                    <div class="col-md-6">Root Beer</div>
+                    <div class="col-md-6">$3.00</div>
+            </div>
+            <div class="row bevs">
+                <div class="col-md-6">Bottled Water</div>
+                <div class="col-md-6">$1.25</div>
+            </div>
+            <div class="row bevs">
+                <div class="col-md-6">Lemonade</div>
+                <div class="col-md-6">$1.00</div>
+            </div>
+            <div class="row bevs">
+                <div class="col-md-6">Iced Tea</div>
+                <div class="col-md-6">$1.25</div>
+            </div>
+        </div>
+    </div><!--end bevs cont-->
+    <br />
+       <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12" style="text-align:center;border-top: 1px solid #000;background-color:#fff;"><h3 class="footer">123 Fake St, Clinton, MA 01510 - 617 335-8313</h3>
+         </div>
+    </div>
+ </div>
 </body>
-
 </html>
 

@@ -2,6 +2,18 @@
 <!-- only used label tags for input tags, not textarea or select -->
 <html lang="en">
 <head>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
     <title>Billy's Restaurant - Home</title>
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
         <style>
@@ -15,59 +27,63 @@
 </head>
 
 <body>
-    <table border="0" align="center" width="100%" >
-<tr> 
-    <td colspan="3" align="center">
-<h1>Billy's Restaurant</h1>
-    </td>
-</tr>
-<tr>
-    <td class="header" width="100" height="1px"><h2><a href="restaurantHome.html">Home</a><h2></td>
-    <td class="header" width="100"><h2><a href="menu.html">Menu</a><h2</td>
-    <td class="header"><h2><a href="contact.html">Contact Us</a><h2</td>
-</tr>
-<tr height="500px" class="bodyColor">
-    <td align="center" colspan="3">
-        <form action="contact.html" method="POST" id="contactForm">
-     <table>
-         <tr>
-             <td align="right"><label for="name" class="required">Name:</label></td>
-             <td><input type="text" name="name" /></td>
-        </tr>
-         <tr>
-             <td align="right"><label for="email" class="required">Email:</label></td>
-             <td><input type="text" name="email" /></td>
-        </tr>
-         <tr>
-             <td align="right"><label for="phone">Phone:</label></td>
-             <td><input type="text" name="phone" /><br /></td>
-        </tr>
-         <tr>
-             <td align="right" class="required">Reason for Inquiry:</td>
-             <td>           
+  <div class="container-fluid" style="border: 1px solid #000;">
+    <div class="row"> 
+        <div class="col-md-12" style="text-align:center;"><h1>Billy's Restaurant</h1>
+        </div>
+    </div>
+    <div class="row" >
+            <div class="col-md-12" style="border: 1px solid #000;">
+                    <ul class="nav nav-tabs header">
+                    <li><a href="restaurantHome.html" class="glyphicon glyphicon-home"></a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+     </div>
+  <div class="row bodyColor">
+          <div class="col-md-12" style="text-align:center;"><b>Contact Us</b>
+          </div>
+      </div>     
+     </div>     
+  <div class="container-fluid bodyColor" style="padding-top:30px;">
+      <form action="contact.html" method="POST" id="contactForm" style="max-width:400px;width:100%;margin:auto;">
+     <div class="row"> 
+        <div class="col-md-12" style="text-align:right;">          
+            <label for="name" class="required">Name:</label><input type="text" name="name" />
+        </div>
+    </div>
+       <div class="row">
+            <div class="col-md-12" style="text-align:right;"><label for="email" class="required">Email:</label><input type="text" name="email" /></div>
+        </div>
+         <div class="row">
+            <div class="col-md-12" style="text-align:right;"><label for="phone">Phone:</label><input type="text" name="phone" /></div>
+       </div>
+         <div class="row">
+            <div class="col-md-12 required" style="text-align:right;">Reason for Inquiry:
                 <select name"reason">
                     <option value="Catering">Catering</option>
                     <option value="Private Party">Private Party</option>
                     <option value="Feedback">Feedback</option>
                     <option value="Other">Other</option>
-                </select></td>
-         </tr>
-         <tr>
-             <td align="right">Additional Information:</td>
-             <td><textarea name="additional"></textarea></td>
-             </tr>
-         <tr>
-             <td>Have you been to the restaurant? </td>
-             <td>
+                </select>            
+               </div>
+        </div>
+       <div class="row">
+             <div class="col-md-12" style="text-align:right;">Additional Information:<textarea name="additional">how code vertical <<middle for label?</textarea> 
+             <!-- how to get vertical middle for text? label not used for textarea-->
+            </div>
+        </div>
+       <div class="row">
+             <div class="col-md-12" style="text-align:right;">Have you been to the restaurant?
                 <label for="no">No</label>
                 <input type="radio" name="been" value="no" />
                 <label for="yes">Yes</label>
                 <input type="radio" name="been" value="yes" />
-           </td>
-        </tr>
-         <tr>
-             <td align="right">Best Days to Contact You:</td>
-             <td>
+          </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12" style="text-align:right;">Best Days to Contact You:
                <label for="m" class="required">M</label>
                    <input type="checkbox" name="days" value="m" />
              <label for="t" class="required">T</label>
@@ -78,25 +94,21 @@
                     <input type="checkbox" name="days" value="th" />
                 <label for="f" class="required">F</label>
                     <input type="checkbox" name="days" value="F" />
-         </tr>
-         <tr>
-             <td></td>
-             <td><input type="submit" value="Send Request" /></td>
-
-        </tr>
-     </table>
-       </form>
-</td>
-</tr>
-<tr>
-  <td colspan="3" align="center">
-<h3 class="footer">123 Fake St, Clinton, MA 01510 - 617 335-8313</h3>
-    </td>
-</tr>
-
-    </table>
+        </div>
+        </div>
+         <div class="row">            
+             <div class="col-md-12" style="text-align:right;padding-right:10%;"><input type="submit" value="Send Request" />
+             </div>
+        </div>
+   </form>
+     </div>      
+<br />
+       <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12" style="text-align:center;border-top: 1px solid #000;background-color:#fff;"><h3 class="footer">123 Fake St, Clinton, MA 01510 - 617 335-8313</h3>
+         </div>
+    </div>
+ </div>
 
 </body>
-
 </html>
-
