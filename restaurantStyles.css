@@ -59,3 +59,10 @@ h1 {
    text-align: right;
 
  }
+
+ol.carousel-indicators li.active {
+  background: yellow;
+}
+div.item h1 {
+  color: sandybrown;
+}
